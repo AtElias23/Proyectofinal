@@ -10,7 +10,7 @@ nombre:"",
 imagen:"",
 stock:0,
 precio:0,
-url:'https://atelias.pythonanywhere.com/productos'+id,
+url:'https://atelias.pythonanywhere.com/productos/'+id,
 }
 },
 methods: {
