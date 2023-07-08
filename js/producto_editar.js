@@ -10,7 +10,7 @@ nombre:"",
 imagen:"",
 stock:0,
 precio:0,
-url:'http://promero.pythonanywhere.com/productos/'+id,
+url:'https://atelias.pythonanywhere.com/productos'+id,
 }
 },
 methods: {
@@ -47,7 +47,7 @@ redirect: 'follow'
 fetch(this.url, options)
 .then(function () {
 alert("Registro modificado")
-window.location.href = "../templates/productos.html";
+window.location.href = "/templates/productos.html";
 })
 .catch(err => {
 console.error(err);

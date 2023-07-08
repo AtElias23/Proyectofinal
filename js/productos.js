@@ -5,7 +5,7 @@ return {
 productos:[],
 //url:'http://localhost:5000/productos',
 // si el backend esta corriendo local usar localhost 5000(si no lo subieron a pythonanywhere)
-url:'http://promero.pythonanywhere.com/productos/', // si ya lo subieron a pythonanywhere
+url:'https://atelias.pythonanywhere.com/productos', // si ya lo subieron a pythonanywhere
 error:false,
 cargando:true,
 /*atributos para el guardar los valores del formulario */
@@ -56,11 +56,11 @@ redirect: 'follow'
 fetch(this.url, options)
 .then(function () {
 alert("Registro grabado")
-window.location.href = "../templates/productos.html";
+window.location.href = "/templates/productos.html";
 })
 .catch(err => {
 console.error(err);
-alert("Error al Grabarr")
+alert("Error al Grabar")
 })
 }
 },
