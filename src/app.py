@@ -1,4 +1,4 @@
-from flask import Flask ,jsonify ,request
+from flask import Flask ,jsonify ,request, render_template
 # del modulo flask importar la clase Flask y los métodos jsonify,request
 from flask_cors import CORS       # del modulo flask_cors importar CORS
 from flask_sqlalchemy import SQLAlchemy
@@ -90,7 +90,11 @@ def update_producto(id):
  
 
 # programa principal *******************************
+    @app.route('/') 
+    def index():
+        return render_template("productos.html")
+    
 if __name__=='__main__':  
     app.run(debug=True, port=5000)    # ejecuta el servidor Flask en el puerto 5000
-
+   
 
